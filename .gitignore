@@ -1,0 +1,64 @@
+# -----------------------------------------------------------
+# GLOBAL IGNORE (OS & Editor)
+# -----------------------------------------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# -----------------------------------------------------------
+# ENVIRONMENT FILES
+# -----------------------------------------------------------
+.env
+.env.*    # such as .env.local, .env.development, .env.production
+
+# -----------------------------------------------------------
+# FRONTEND (Vite + React)
+# -----------------------------------------------------------
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/.cache/
+frontend/build/
+
+# Local environment overrides
+frontend/.env
+frontend/.env.*
+
+# -----------------------------------------------------------
+# BACKEND (Node + Express)
+# -----------------------------------------------------------
+backend/node_modules/
+backend/dist/
+backend/build/
+
+backend/.env
+backend/.env.*
+
+# -----------------------------------------------------------
+# SQLITE & DATABASE FILES
+# -----------------------------------------------------------
+backend/**/*.sqlite
+backend/**/*.sqlite3
+backend/database/*.sqlite3
+backend/database/*.db
+backend/database/migrations/.cache
+
+# -----------------------------------------------------------
+# MISC TEMP FILES
+# -----------------------------------------------------------
+*.tmp
+*.temp
+*.pid
+*.seed
+*.lock
+*.bak
+
+# PM2
+.pm2/
